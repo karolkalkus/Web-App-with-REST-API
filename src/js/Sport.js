@@ -1,7 +1,10 @@
 import React from "react";
+import {
+  NavLink
+} from 'react-router-dom';
 import Collapse from "./Collapse";
 
-class App extends React.Component {
+class Sport extends React.Component {
   constructor(props) {
     super(props);
 
@@ -52,10 +55,12 @@ class App extends React.Component {
       console.log(this.state.articles);
     
     return (
-      <div>
+      <div className='sportBackground'>
         <header>
-          <img />
-          <h1 className='upper'>Breaking News</h1>
+        <div className='boxHomelink heartbeat'>
+        <NavLink className='homeLink' exact to='/' activeClassName='activeStyle'>Change category</NavLink>
+        </div>
+          <h1 className='upper'>Sport News</h1>
         </header>
         <div className="content">
           <div className="panel-group">
@@ -77,4 +82,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default Sport;
