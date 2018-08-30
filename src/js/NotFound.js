@@ -1,7 +1,5 @@
 import React from "react";
-import {
-  NavLink
-} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 class NotFound extends React.Component {
   constructor(props) {
@@ -9,7 +7,7 @@ class NotFound extends React.Component {
 
     this.state = {
       isLoading: true,
-      joke: [],
+      joke: []
     };
   }
 
@@ -22,29 +20,32 @@ class NotFound extends React.Component {
 
     fetch(apiUrl)
       .then(r => r.json())
-      .then(data => this.setState({
+      .then(data =>
+        this.setState({
           joke: data.value,
-          isLoading:false,
-        }))
+          isLoading: false
+        })
+      )
       .catch(error => console.log("parsing faild", error));
   }
 
   render() {
-    const {isLoading, joke} = this.state;
+    const { isLoading, joke } = this.state;
 
     if (isLoading) {
       return <h1> Wait a minute.. </h1>;
-    }else{
-    
-    return (
-        <div className='errorBackground'>
-        <div className='jokebox'>
-        <h1>{joke}</h1>
-        <NavLink className='goHome' exact to='/' >Go Home</NavLink>
+    } else {
+      return (
+        <div className="errorBackground">
+          <div className="jokebox">
+            <h1>{joke}</h1>
+            <NavLink className="goHome" exact to="/">
+              Go Home
+            </NavLink>
+          </div>
         </div>
-        </div>
-    );
-  }
+      );
+    }
   }
 }
 

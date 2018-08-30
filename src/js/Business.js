@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Collapse from "./Collapse";
 
-class Sport extends React.Component {
+class Business extends React.Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +19,7 @@ class Sport extends React.Component {
 
   fetchData() {
     const apiUrl =
-      "https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=8707b4f175b54f48aab162a22ac2e73f";
+      "https://newsapi.org/v2/top-headlines?sources=business-insider&apiKey=8707b4f175b54f48aab162a22ac2e73f";
 
     fetch(apiUrl)
       .then(r => r.json())
@@ -50,11 +50,11 @@ class Sport extends React.Component {
       console.log(this.state.articles);
 
       return (
-        <div className="sportBackground">
+        <div className="businessBackground">
           <header>
             <div className="boxHomelink heartbeat">
               <NavLink
-                className="homeLink"
+                className="homeLink "
                 exact
                 to="/"
                 activeClassName="activeStyle"
@@ -62,7 +62,7 @@ class Sport extends React.Component {
                 Change category
               </NavLink>
             </div>
-            <h1 className="upper">Sport News</h1>
+            <h1 className="upper">Business</h1>
           </header>
           <div className="content">
             <div className="panel-group">
@@ -94,4 +94,4 @@ class Sport extends React.Component {
   }
 }
 
-export default Sport;
+export default Business;

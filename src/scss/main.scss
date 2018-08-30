@@ -1,6 +1,6 @@
-*{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,30 +8,55 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
-.newsBackground{
-  background-image: url(../images/newsBackground.jpg);
+
+.newsBackground {
+  background-image: url(../images/newsBcg.jpg);
   background-position: center;
   padding-bottom: 40px;
 }
-.sportBackground{
-  background-image: url(../images/newsBackground.jpg);
+
+.sportBackground {
+  background-image: url(../images/sport_walp.jpg);
   background-position: center;
   padding-bottom: 40px;
 }
-.homeBackground{
+
+.businessBackground {
+  background-image: url(../images/business.jpg);
+  background-position: center;
+  padding-bottom: 40px;
+}
+
+.scienceBackground {
+  background-image: url(../images/science.jpg);
+  background-position: center;
+  padding-bottom: 40px;
+}
+
+.entertainmentBackground {
+  background-image: url(../images/Entertainment_walp.jpg);
+  background-position: center;
+  padding-bottom: 40px;
+}
+
+.homeBackground {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   background-image: url(../images/homBackground.jpg);
-  background-size: cover;
   width: 100vw;
   height: 100vh;
-  h1{
-  color: white;
-  font-size: 40px;
-  box-shadow: 0 0 10px white;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    box-shadow: 0 0 10px white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
-.errorBackground{
+
+.errorBackground {
   display: flex;
   align-items: center;
   height: 100vh;
@@ -39,18 +64,19 @@ body {
   font-size: 14px;
   background-image: url(../images/error404.png);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 40px;
 }
-.jokebox{
+
+.jokebox {
   display: flex;
   flex-flow: column;
   align-items: center;
   margin: 0 auto;
   max-width: 50vw;
 }
-.goHome{
+
+.goHome {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -60,23 +86,26 @@ body {
   color: white;
   padding: 10px 30px;
   border: 1px solid white;
-  &:hover{
+
+  &:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 
-.container{
+.container {
   margin: 0 auto;
 }
 
-.linkBoxes{
+.linkBoxes {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.box{
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,50 +116,59 @@ body {
   padding: 30px;
   border-radius: 7px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
-  background-color: rgba(34, 93, 148, 0.8);
-  &:hover{
+  background-color: rgba(0, 37, 71, 0.8);
+
+  &:hover {
     transform: scale(1.1);
   }
 }
+
 .heartbeat {
-	animation: heartbeat 2.5s ease-in-out infinite both;
+  animation: heartbeat 2.5s ease-in-out infinite both;
 }
 
- @keyframes heartbeat {
+@keyframes heartbeat {
   from {
     transform: scale(1);
     transform-origin: center center;
     animation-timing-function: ease-out;
   }
+
   10% {
     transform: scale(0.91);
     animation-timing-function: ease-in;
   }
+
   17% {
     transform: scale(0.98);
     animation-timing-function: ease-out;
   }
+
   33% {
     transform: scale(0.87);
     animation-timing-function: ease-in;
   }
+
   45% {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
 }
-.homeLink{
+
+.homeLink {
   width: 100%;
   height: 50px;
   text-decoration: none;
   font-size: 30px;
   font-weight: 700;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
-.boxHomelink{
+
+.boxHomelink {
   padding: 30px 0 40px 0;
 }
-.navLink{
+
+.navLink {
   text-decoration: none;
   padding: 70px 100px;
   font-size: 25px;
@@ -143,26 +181,33 @@ h1 {
   text-align: center;
   margin-bottom: 14px;
 }
-.title{
+
+.title {
   padding: 10px 0;
-  &:hover{
+
+  &:hover {
     transform: scale(1.05);
+  }
 }
-}
-.upper{
+
+.upper {
   text-transform: uppercase;
   font-size: 70px;
   box-shadow: 0 0 45px;
   letter-spacing: 5px;
+  margin-bottom: 50px;
 }
+
 header {
   margin-bottom: 20px;
   text-align: center;
 }
-i{
+
+i {
   padding: 0 20px;
 }
-p{
+
+p {
   margin: 0 auto;
   padding: 30px 10px 30px 10px;
   font-size: 18px;
@@ -170,21 +215,22 @@ p{
   text-align: center;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid rgba(180, 153, 103, 0.4);
   padding-bottom: 20px;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: #1d5dd4;
   font-size: 16px;
 }
 
-img{
+img {
   padding-top: 30px;
+  width: 80%;
 }
 
 .content {
@@ -193,47 +239,60 @@ img{
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 30px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
   .table {
-      margin-bottom: 0;
-      td,th {
-          vertical-align: middle
-      }
-      .mRight {
-          margin-right: 20px;
-      }
+    margin-bottom: 0;
+
+    td,
+    th {
+      vertical-align: middle
+    }
+
+    .mRight {
+      margin-right: 20px;
+    }
   }
 }
+
 .message {
   text-align: center;
+
   &:only-child {
-      margin: 0;
+    margin: 0;
   }
 }
+
 .btn-sm {
   margin-right: 8px;
 }
+
 .form-inline {
   margin: 10px auto;
   width: 235px;
+
   .btn-default {
-      margin-left: 5px;
+    margin-left: 5px;
   }
 }
+
 .credits {
   text-align: center;
   padding: 70px;
   opacity: .5;
   transition: opacity 0.3s linear;
+
   &:hover {
-      opacity: 1;
+    opacity: 1;
   }
+
   a {
-      color: #4b4668;
+    color: #4b4668;
   }
 }
+
 .panel-group {
- text-align: center;
+  text-align: center;
 }
 
 /* Simple show/hide */
@@ -247,7 +306,6 @@ img{
 //         }
 //     }
 // }
-
 /* Simple CSS transition of max-height */
 // .panel {
 //     .panel-collapse {
@@ -261,22 +319,22 @@ img{
 //         }
 //     }
 // }
-
 /* JS calculated height - the most accurate */
 .panel {
   .panel-heading {
-      cursor: pointer;
-      
+    cursor: pointer;
   }
-  .panel-collapse {
-      overflow: hidden;
-      transition: height 0.3s ease-out; 
-      
-  }
-  .panel-body {
-      border: none !important;
-      
-  }
-  h2 {margin-top: 5px !important;}
-}
 
+  .panel-collapse {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+
+  .panel-body {
+    border: none !important;
+  }
+
+  h2 {
+    margin-top: 5px !important;
+  }
+}

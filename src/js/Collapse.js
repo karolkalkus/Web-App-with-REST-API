@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
 class Collapse extends React.Component {
   constructor(props) {
     super(props);
@@ -24,22 +23,23 @@ class Collapse extends React.Component {
     const currentHeight = isExpanded ? height : 0;
     return (
       <div>
-      <div className={`panel ${isExpanded ? "is-expanded" : ""}`}>
-        <div className="panel-heading">
-          <h2 className="title" onClick={e => this.handleToggle(e)}>
-          <i className="fas fa-angle-double-right" />{title}
-          <i className="fas fa-angle-double-left" />
-          </h2>
-        </div>
-        <div
-          className="panel-collapse"
-          style={{ height: currentHeight + "px" }}
-        >
-          <div className="panel-body" ref="inner">
-            {children}
+        <div className={`panel ${isExpanded ? "is-expanded" : ""}`}>
+          <div className="panel-heading">
+            <h2 className="title" onClick={e => this.handleToggle(e)}>
+              <i className="fas fa-angle-double-right" />
+              {title}
+              <i className="fas fa-angle-double-left" />
+            </h2>
+          </div>
+          <div
+            className="panel-collapse"
+            style={{ height: currentHeight + "px" }}
+          >
+            <div className="panel-body" ref="inner">
+              {children}
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
