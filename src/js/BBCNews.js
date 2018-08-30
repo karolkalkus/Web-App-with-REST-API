@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Collapse from "./Collapse";
 
-class News extends React.Component {
+class BBCNews extends React.Component {
   constructor(props) {
     super(props);
 
@@ -82,4 +82,4 @@ class News extends React.Component {
 }
 
 
-export default News;
+export default BBCNews;

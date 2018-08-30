@@ -9,32 +9,66 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .newsBackground{
-  background-image: url(/src/images/newsBackground.jpg);
+  background-image: url(../images/newsBackground.jpg);
   background-position: center;
   padding-bottom: 40px;
 }
 .sportBackground{
-  background-image: url(/src/images/sportBackground.jpg);
+  background-image: url(../images/newsBackground.jpg);
   background-position: center;
   padding-bottom: 40px;
 }
 .homeBackground{
-  background-color: #bada55;
+  background-image: url(../images/homBackground.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  h1{
+  color: white;
+  font-size: 40px;
+  box-shadow: 0 0 10px white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  }
+}
+.errorBackground{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-size: 14px;
+  background-image: url(../images/error404.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+.jokebox{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+.goHome{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid white;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .container{
   margin: 0 auto;
 }
 
-.mainBox{
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(67, 149, 216);
-}
 .linkBoxes{
   display: flex;
   flex-flow: row wrap;
@@ -46,12 +80,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  text-align: center;
   margin: 30px;
   width: 200px;
   height: 100px;
   padding: 30px;
-  box-shadow: 0 0 5px rgb(255, 255, 255);
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  background-color: rgba(34, 93, 148, 0.8);
   &:hover{
     transform: scale(1.1);
   }
@@ -83,8 +119,6 @@ body {
     animation-timing-function: ease-out;
   }
 }
-
-
 .homeLink{
   width: 100%;
   height: 50px;
@@ -99,9 +133,9 @@ body {
 .navLink{
   text-decoration: none;
   padding: 70px 100px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
-  color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 h1 {
