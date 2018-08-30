@@ -10,16 +10,22 @@ body {
 .newsBackground {
   background-image: url(images/newsBcg.0751aa78e4a3bc8f053a1550a30c1362.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 40px; }
 
 .sportBackground {
   background-image: url(images/sport_walp.afd3872f390dd2623095a596679c66db.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 40px; }
 
 .businessBackground {
   background-image: url(images/business.3126864e628e3dc62c627158abd25cc6.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 40px; }
 
 .scienceBackground {
@@ -30,6 +36,8 @@ body {
 .entertainmentBackground {
   background-image: url(images/Entertainment_walp.42ea3c245cb7e494e7082ba9d2ecbe65.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 40px; }
 
 .homeBackground {
