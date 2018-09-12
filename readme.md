@@ -1,5 +1,6 @@
  # Web-App-with-REST-API 
  Simple React application fetching data from news service. In the application was used React Router to manage traffic on the website.
+Technologies and tools: HTML5, Sass, JavaScript (ES6), JSX, Webpack, React, React-router.
 
 The user on the main page can choose news subject.
 
